@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CrabWorld
+comment0.text=\r\n\ The\ CrabWorld\ is\ the\ place\ where\ crabs\ and\ other\ creatures\ live.\ \r\n\ It\ creates\ the\ initial\ population.\r\n
+comment1.params=
+comment1.target=CrabWorld()
+comment2.params=
+comment2.target=void\ spin()
+comment3.params=
+comment3.target=void\ prepare()
+numComments=4
