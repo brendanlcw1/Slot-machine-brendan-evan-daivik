@@ -1,5 +1,6 @@
 import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
 
+
 /**
  * The CrabWorld is the place where crabs and other creatures live. 
  * It creates the initial population.
@@ -11,12 +12,21 @@ public class CrabWorld extends World
     private int x2 = 300;
     private int x3 = 503;
     private Value[] slots;
+    private double money;
     
     public CrabWorld() 
     {
         super(600, 700, 1);
         slots = new Value[3];
         prepare();
+        int input = Integer.parseInt(Greenfoot.ask("Enter your starting value (as an integer): "));
+        money = input; 
+        System.out.println(money);
+        
+    }
+    public void setMoney(double cash)
+    {
+        money = cash;
     }
     
     public void spin() {
