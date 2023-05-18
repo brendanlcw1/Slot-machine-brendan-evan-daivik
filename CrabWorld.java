@@ -29,9 +29,9 @@ public class CrabWorld extends World
     {
         return money;
     }
-    public void printMoney()
+   public void printMoney()
     {
-        showText("Money:  "+money,10, 10);
+        showText("$"+money,50, 10);
     }
     public void setMoney(double cash)
     {
@@ -42,6 +42,7 @@ public class CrabWorld extends World
        
          
          spin();
+         printMoney();
         
         
         
