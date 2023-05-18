@@ -24,6 +24,10 @@ public class CrabWorld extends World
         System.out.println(money);
         
     }
+    public double getMoney()
+    {
+        return money;
+    }
     public void setMoney(double cash)
     {
         money = cash;
