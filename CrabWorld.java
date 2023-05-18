@@ -29,19 +29,30 @@ public class CrabWorld extends World
     {
         return money;
     }
-   public void printMoney()
+    public void printMoney()
     {
-        showText("$"+money,50, 10);
+        showText("$"+money, getWidth() / 2, 10);
     }
     public void setMoney(double cash)
     {
         money = cash;
     }
     
+    public void updateMoney() {
+        if (slots[0].getIdx() == slots[1].getIdx() || slots[1].getIdx() == slots[2].getIdx()) {
+            setMoney(money*1.15);
+        } else if (slots[0].getIdx() == slots[1].getIdx() && slots[1].getIdx()==slots[2].getIdx()) {
+            setMoney(money*1.5);
+        } else {
+            setMoney(money*0.9);
+        }
+    }
+    
   public void act() {
        
          
          spin();
+         updateMoney();
          printMoney();
         
         
