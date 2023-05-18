@@ -33,27 +33,22 @@ public class CrabWorld extends World
         money = cash;
     }
     
-    /*
-     public void act() {
-        for (Value i: slots) {
-            int ceil = (int) Math.random() * 5;
-            for (int j = 0; j < ceil; j++) {
-                i.forward();
-                try {
-                Thread.sleep(5);
-            } catch(Exception e) {
-                ;
-            }
-            }
-        }
+  public void act() {
+       
+         
+         spin();
+        
+        
+        
     }
-    */
+
     
     public void spin() {
         for (Value i: slots) {
-            
+            i.forward();
         }
     }
+
     
     private void prepare()
     {        
