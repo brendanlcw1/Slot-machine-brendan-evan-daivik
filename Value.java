@@ -11,8 +11,8 @@ public class Value extends Actor
     private int idx;
     private int x;
     private int y;
+   private String[] images = { "images\\goldDrag.png", "images\\dragonGold.png", "images\\jackpot.png", "images\\wild.png"};
     
-    private String[] images = {"images\\A.png", "images\\goldDrag.png", "images\\dragonGold.png", "images\\jackpot.png", "images\\wild.png"};
     
     /**
      * Act - do whatever the Value wants to do. This method is called whenever
