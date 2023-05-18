@@ -13,6 +13,7 @@ public class CrabWorld extends World
     private int x3 = 503;
     private Value[] slots;
     private double money;
+    int randInt;
     
     public CrabWorld() 
     {
@@ -43,9 +44,15 @@ public class CrabWorld extends World
     }
 
     
-    public void spin() {
+   public void spin() {
         for (Value i: slots) {
+            
+            randInt = (int) (Math.random() * 4) ;
+            for(int j = 0; j < randInt; j++){
+            
             i.forward();
+            }
+            
         }
     }
 
