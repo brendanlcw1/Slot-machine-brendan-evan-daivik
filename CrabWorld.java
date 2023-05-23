@@ -22,7 +22,6 @@ public class CrabWorld extends World
         prepare();
         int input = Integer.parseInt(Greenfoot.ask("Enter your starting value (as an integer): "));
         money = input; 
-        System.out.println(money);
         
     }
     public double getMoney()
@@ -35,7 +34,7 @@ public class CrabWorld extends World
     }
     public void setMoney(double cash)
     {
-        money = cash;
+        money = ((double)((int)(cash*100.0)))/100.0;
     }
     
     public void updateMoney() {
