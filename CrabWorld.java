@@ -39,9 +39,9 @@ public class CrabWorld extends World
     
     public void updateMoney() {
         if (slots[0].getIdx() == slots[1].getIdx() || slots[1].getIdx() == slots[2].getIdx()) {
-            setMoney(money*1.15);
+            setMoney(money*1.13);
         } else if (slots[0].getIdx() == slots[1].getIdx() && slots[1].getIdx()==slots[2].getIdx()) {
-            setMoney(money*1.5);
+            setMoney(money*1.4);
         } else {
             setMoney(money*0.9);
         }
