@@ -45,17 +45,17 @@ public class CrabWorld extends World
         } else {
             setMoney(money*0.9);
         }
+        if (money==0.0) {
+            showText("GAME OVER, PUT IN MORE MONEY TO CONTINUE", getWidth() / 2, getHeight() / 2);
+            Greenfoot.stop();
+        }
+        
     }
     
   public void act() {
-       
-         
          spin();
          updateMoney();
          printMoney();
-        
-        
-        
     }
 
     
